@@ -7,13 +7,60 @@ RSS feed: https://exiftool.org/rss.xml
 Note: The most recent production release is Version 12.76. (Other versions are
 considered development releases, and are not uploaded to MetaCPAN.)
 
+Oct. 8, 2024 - Version 12.98
+
+  - Added write support for PDF files with huge offsets
+  - Added a number of new Sony LensType values (thanks Jos Roost)
+  - Require -v4 or higher to output "JPG RST" lines
+  - Patched problem with -fast option when reading HEIC file via a pipe
+  - Patched to avoid hang when reading some corrupted XMP
+
+Sept. 25, 2024 - Version 12.97
+
+  - Added ability to ignore up to 4095 bytes of garbage at the end of an INDD
+    file with the -m option
+  - Added a new Canon RFLensType value (thanks Norbert Wasser)
+  - Added a new Nikon Z LensID
+  - Decode a number of new Nikon Z6_3 tags (thanks Warren Hatch)
+  - Decode a few more FujiFilm tags (thanks Greybeard)
+  - Enhanced %C format code to allow file-name collisions to be avoided by using
+    a colon instead of a decimal in the format modifier
+  - Fixed bug which could result in hang when using %C code in an output file
+    name
+
+Sept. 1, 2024 - Version 12.96
+
+  - More improvements to handling of trailers on video files (and add ability to
+    write videos which have an unknown trailer)
+  - Fixed problem geotagging from some newer Google Takeout files
+
+Aug. 30, 2024 - Version 12.95
+
+  - Added a couple of new CanonModelID values
+  - Decode ColorData for a couple of new Canon models
+  - Fixed problem writing video files which have some known trailer types
+
+Aug. 29, 2024 - Version 12.94
+
+  - Added ability to geotag from new-format Google Takeout JSON files
+  - Added a few new Android and Xiaomi QuickTime Keys tags
+  - Added ability to read C2PA JUMBF metadata from TTF/OTF files
+  - Internal changes to code for creating new directories
+  - Changed Windows packages to have the application help text file in the
+    exiftool_files folder instead of writing it to a temporary directory
+  - Removed new QuickTime Keys tags added in 12.93 because these aren't used in
+    top-level metadata (written to the video track by Apple devices)
+  - Fixed the group names for synthesized default-language QuickTime tags and
+    added a verbose message when generating these tags
+  - Fixed warning in Geolocation.t self test
+
 Aug. 20, 2024 - Version 12.93
 
   - Added a new Nikon LensID
   - Added a couple of new OpenEXR Compression types
   - Added a couple of new QuickTime Keys tags
-  - Decode timed metadata from E-ACE B44 DashCam videos
-  - Make "Unrecognized" Samsung Meta warnings minor
+  - Decode timed metadata from E-ACE B44 dashcam videos
+  - Made "Unrecognized" Samsung Meta warnings minor
   - Fixed bug in -listg6 option which resulted in "uninitialized value" warnings
   - Fixed decoding of Func1Button and Func2Button for the Nikon Z6/Z7
   - Fixed bug reading JUMB metadata from JXL images
@@ -104,7 +151,7 @@ June 7, 2024 - Version 12.86
   - Patched some Olympus WB_RBLevels tags to allow 4 values to be written as per
     some newer models
   - Fixed issue when writing IPTC date tags with a date/time value containing
-subseconds with 4 or more digits
+    subseconds with 4 or more digits
 
 May 21, 2024 - Version 12.85
 
