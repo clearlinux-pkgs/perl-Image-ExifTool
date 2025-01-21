@@ -7,7 +7,7 @@
 #
 Name     : perl-Image-ExifTool
 Version  : 13.14
-Release  : 9
+Release  : 10
 URL      : https://exiftool.org/Image-ExifTool-13.14.tar.gz
 Source0  : https://exiftool.org/Image-ExifTool-13.14.tar.gz
 Summary  : perl module for image data extraction
