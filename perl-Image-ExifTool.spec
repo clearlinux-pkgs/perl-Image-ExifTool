@@ -6,10 +6,10 @@
 # autospec commit: f4a13a5
 #
 Name     : perl-Image-ExifTool
-Version  : 13.13
-Release  : 7
-URL      : https://exiftool.org/Image-ExifTool-13.13.tar.gz
-Source0  : https://exiftool.org/Image-ExifTool-13.13.tar.gz
+Version  : 13.14
+Release  : 8
+URL      : https://exiftool.org/Image-ExifTool-13.14.tar.gz
+Source0  : https://exiftool.org/Image-ExifTool-13.14.tar.gz
 Summary  : perl module for image data extraction
 Group    : Development/Tools
 License  : Artistic-1.0-Perl GPL-1.0-or-later
@@ -137,8 +137,8 @@ perl components for the perl-Image-ExifTool package.
 
 
 %prep
-%setup -q -n Image-ExifTool-13.13
-cd %{_builddir}/Image-ExifTool-13.13
+%setup -q -n Image-ExifTool-13.14
+cd %{_builddir}/Image-ExifTool-13.14
 
 %build
 export http_proxy=http://127.0.0.1:9/
