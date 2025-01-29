@@ -6,10 +6,10 @@
 # autospec commit: 94c6be0
 #
 Name     : perl-Image-ExifTool
-Version  : 13.16
-Release  : 13
-URL      : https://exiftool.org/Image-ExifTool-13.16.tar.gz
-Source0  : https://exiftool.org/Image-ExifTool-13.16.tar.gz
+Version  : 13.17
+Release  : 14
+URL      : https://exiftool.org/Image-ExifTool-13.17.tar.gz
+Source0  : https://exiftool.org/Image-ExifTool-13.17.tar.gz
 Summary  : perl module for image data extraction
 Group    : Development/Tools
 License  : Artistic-1.0-Perl GPL-1.0-or-later
@@ -137,8 +137,8 @@ perl components for the perl-Image-ExifTool package.
 
 
 %prep
-%setup -q -n Image-ExifTool-13.16
-cd %{_builddir}/Image-ExifTool-13.16
+%setup -q -n Image-ExifTool-13.17
+cd %{_builddir}/Image-ExifTool-13.17
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -357,10 +357,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/Image::ExifTool::Text.3
 /usr/share/man/man3/Image::ExifTool::Theora.3
 /usr/share/man/man3/Image::ExifTool::Torrent.3
+/usr/share/man/man3/Image::ExifTool::Trailer.3
 /usr/share/man/man3/Image::ExifTool::Unknown.3
 /usr/share/man/man3/Image::ExifTool::VCard.3
 /usr/share/man/man3/Image::ExifTool::Validate.3
-/usr/share/man/man3/Image::ExifTool::Vivo.3
 /usr/share/man/man3/Image::ExifTool::Vorbis.3
 /usr/share/man/man3/Image::ExifTool::WPG.3
 /usr/share/man/man3/Image::ExifTool::WTV.3
