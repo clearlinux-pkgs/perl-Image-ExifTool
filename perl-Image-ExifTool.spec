@@ -7,7 +7,7 @@
 #
 Name     : perl-Image-ExifTool
 Version  : 13.27
-Release  : 20
+Release  : 21
 URL      : https://exiftool.org/Image-ExifTool-13.27.tar.gz
 Source0  : https://exiftool.org/Image-ExifTool-13.27.tar.gz
 Summary  : 'Read and write meta information'
